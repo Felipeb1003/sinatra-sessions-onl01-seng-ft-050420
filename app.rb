@@ -43,6 +43,7 @@ class App < Sinatra::Base
       redirect '/fetch_session_id'
     else
       session[:id] = 1
+       redirect '/fetch_session_id'
     end
   end
 
